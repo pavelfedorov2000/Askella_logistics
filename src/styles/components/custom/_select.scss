@@ -1,0 +1,65 @@
+.jq-selectbox {
+    &__select {
+        display: flex;
+        align-items: center;
+        height: 35px;
+        padding-left: 24px;
+        border-radius: 0;
+        background: #E6EDEF;
+        font-family: 'Arial', sans-serif;
+        @extend %text-14;
+        box-shadow: none;
+        text-shadow: none;
+        border: none;
+        transition: .3s all;
+
+        &:hover {
+            background: #E6EDEF;
+        }
+
+        &:active {
+            background: transparent;
+            box-shadow: none;
+        }
+    }
+
+    &__select-text {
+        transform: skewX(20deg);
+    }
+
+    &__trigger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        background-image: url(../img/icons/drop-arrow.svg);
+        background-size: 23px 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-left: none;
+    }
+
+    &__trigger-arrow {
+        border: none;
+    }
+
+    li {
+        color: rgba(0, 0, 0, 0.6);
+
+        &:hover {
+            background: rgba(107, 126, 172, 0.05);
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    li.selected {
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__dropdown {
+        border-radius: 0;
+        padding-top: 15px;
+    }
+}

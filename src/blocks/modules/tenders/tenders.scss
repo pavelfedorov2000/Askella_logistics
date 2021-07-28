@@ -1,0 +1,104 @@
+.tender {
+
+    @extend %text-14;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #9F9F9F;
+
+    @media(max-width: 575px) {
+        padding-bottom: 14px;
+    }
+
+    // .tender__list
+
+    &__list {
+        margin-top: 14px;
+
+        @media(max-width: 575px) {
+            margin-top: 8px;
+        }
+    }
+
+    // .tender__list-item
+
+    &__list-item {
+        display: flex;
+
+        @media(max-width: 374px) {
+            flex-direction: column;
+        }
+    }
+
+    &__list-item+&__list-item {
+        @media(max-width: 374px) {
+            margin-top: 5px;
+        }
+    }
+}
+
+.tenders {
+    &__filters {
+        @extend %flex-row;
+        margin: 45px 0 53px;
+
+        @media(max-width: 850px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 18px;
+        }
+
+        @media(max-width: 575px) {
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__items {
+        width: 495px * 2 + 136px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 34px 136px;
+
+        @media(max-width: 1200px) {
+            width: 100%;
+            grid-gap: 30px 50px;
+        }
+
+        @media(max-width: 991px) {
+            grid-template-columns: 100%;
+            grid-gap: 18px;
+        }
+    }
+}
+
+.filter-form {
+
+    // .filter-form__item
+
+    &__item {
+        width: 317px / $container * 100%;
+
+        @media(max-width: 850px) {
+            width: 100%;
+        }
+    }
+
+    // .filter-form__reset-btn
+
+    &__reset-btn {
+        @extend %text-14;
+        text-align: left;
+    }
+
+    .jq-selectbox {
+
+        &__select {
+            transform: skewX(-20deg);
+            height: 35px;
+            color: #000;
+        }
+
+        &__trigger {
+            width: 64px;
+            background-color: $blue;
+        }
+    }
+}

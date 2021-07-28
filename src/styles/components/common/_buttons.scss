@@ -1,0 +1,17 @@
+.btn {
+    width: 160px;
+    height: 29px;
+    @extend %flex-center;
+    border: 1px solid $orange;
+    transform: skewX(-30deg);
+    @extend %text-14;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s all;
+
+    span {
+        display: block;
+        transform: skewX(30deg);
+    }
+}

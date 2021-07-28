@@ -1,0 +1,22 @@
+<form id="request-form" action="#" class="form transportation-request__form request-form">
+    <legend class="form__title">
+        ЗАЯВКА НА ПЕРЕВОЗКУ И АРЕНДУ ВАГОНОВ
+    </legend>
+    <div class="form__body">
+        <input class="form__input" name="name" placeholder="ФИО" required>
+        <input class="form__input" type="tel" name="phone" placeholder="E-mail" required>
+        <input class="form__input" type="email" name="email" placeholder="Телефон" required>
+        <input class="form__input" name="company" placeholder="Компания">
+
+        <div class="form__file">
+            <label class="form__label form__file-label" for="file">
+                Файл заявки на перевозку:
+            </label>
+            <input class="filter-style" type="file" name="file" id="file" data-placeholder="Выберите файл">
+        </div>
+
+        @@include('./_antispam.html')
+
+        <button class="btn form__btn" type="submit"><span>Отправить</span></button>
+    </div>
+</form>

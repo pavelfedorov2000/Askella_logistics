@@ -1,0 +1,34 @@
+.questionary-form {
+
+    @media(max-width: 575px) {
+        padding: 45px 25px 25px 15px;
+    }
+
+    &__question {
+        margin-bottom: 24px;
+
+        @media(max-width: 575px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__question-text {
+        @extend %text-14;
+        color: #000;
+        margin-bottom: 14px;
+
+        @media(max-width: 575px) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__radio-inputs {
+        display: flex;
+    }
+
+    &__radio-item {
+        text-align: center;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+}

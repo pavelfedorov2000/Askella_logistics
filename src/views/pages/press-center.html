@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Пресс-центр"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/menu/_menu.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        @@include('../../blocks/modules/breadcrumbs/_1-level.html', {
+        "current": "Пресс-центр"
+        })
+
+        <main class="page press-center">
+            <div class="container">
+                <h1>Пресс-центр</h1>
+                <div class="press-center__top-text">
+                    <p>
+                        Наша компания придерживается принципов информационной открытости, характерных для современного
+                        цивилизованного бизнеса.
+                    </p>
+                    <p>
+                        Мы стремимся своевременно информировать общественность обо всех значимых событиях жизни компании
+                        и оперативно реагировать на запросы СМИ, предоставляя нужные сведения в необходимые сроки.
+                    </p>
+                    <p>Единая Пресс-служба Группы компаний РТК готова ответить на вопросы журналистов.</p>
+                </div>
+                <a href="#" class="press-center__contact-link">
+                    <div class="press-center__contact-plus"></div>
+                    <span>Контакты Пресс-службы Группы компаний РТК</span>
+                </a>
+
+                <div class="press-center__articles">
+                    <article class="articles__col article">
+                        <h3 class="section-title line-title article__title">
+                            <a href="#">Новости компании</a>
+                        </h3>
+                        <article class="article__item">
+                            <time class="article__item-date" datetime="2021-03-30">30/03/2021</time>
+                            <h6 class="article__item-title">
+                                <a href="#">
+                                    ВТБ Лизинг передал в оперирование "Грузовой компании" более 2000 полувагонов
+                                </a>
+                            </h6>
+                        </article>
+                        <article class="article__item">
+                            <time class="article__item-date" datetime="2021-03-16">16/03/2021</time>
+                            <h6 class="article__item-title">
+                                <a href="#">Выставка TRANSRUSSIA 2021</a>
+                            </h6>
+                        </article>
+                        <article class="article__item">
+                            <time class="article__item-date" datetime="2021-03-27">27/03/2021</time>
+                            <h6 class="article__item-title">
+                                <a href="#">О БЕСПЕРЕБОЙНОЙ РАБОТЕ ООО «ГРУЗОВАЯ КОМПАНИЯ»</a>
+                            </h6>
+                        </article>
+                    </article>
+                    <article class="articles__col article">
+                        <h3 class="section-title line-title article__title">
+                            <a href="#">Новости отрасли</a>
+                        </h3>
+                        <article class="article__item">
+                            <time class="article__item-date" datetime="2021-03-30">30/03/2021</time>
+                            <h6 class="article__item-title">
+                                <a href="#">Вагоны уезжают от ремонтов</a>
+                            </h6>
+                        </article>
+                        <article class="article__item">
+                            <time class="article__item-date" datetime="2021-03-30">30/03/2021</time>
+                            <h6 class="article__item-title">
+                                <a href="#">РЖД наращивает поставки угля в 2021 году</a>
+                            </h6>
+                        </article>
+                        <article class="article__item">
+                            <time class="article__item-date" datetime="2021-03-30">30/03/2021</time>
+                            <h6 class="article__item-title">
+                                <a href="#">Замерзшая Балтика подняла цены на уголь в Европе</a>
+                            </h6>
+                        </article>
+                    </article>
+                    <article class="articles__col article">
+                        <h3 class="section-title line-title article__title">
+                            <a href="#">МНЕНИЯ ЭКСПЕРТОВ</a>
+                        </h3>
+                        <article class="article__item">
+                            <time class="article__item-date" datetime="2021-02-09">09/02/2021</time>
+                            <h6 class="article__item-title">
+                                <a href="#">
+                                    ИПЕМ: увеличение пассажирских перевозок не несет в себе дополнительных
+                                    ограничений для грузового сообщения
+                                </a>
+                            </h6>
+                        </article>
+                        <article class="article__item">
+                            <time class="article__item-date" datetime="2021-02-09">09/02/2021</time>
+                            <h6 class="article__item-title">
+                                <a href="#">
+                                    ИПЕМ: увеличение пассажирских перевозок не несет в себе дополнительных
+                                    ограничений для грузового сообщения
+                                </a>
+                            </h6>
+                        </article>
+                        <article class="article__item">
+                            <time class="article__item-date" datetime="2021-02-09">09/02/2021</time>
+                            <h6 class="article__item-title">
+                                <a href="#">
+                                    Интерес к универсальному подвижному составу вернется на горизонте 3–5 лет
+                                </a>
+                            </h6>
+                        </article>
+                    </article>
+                </div>
+
+                <section class="press-center__gallery">
+                    <h3 class="section-title line-title press-center__gallery-title">ФОТОГАЛЕРЕЯ</h3>
+                    <div class="gallery-item press-center__gallery-item popup-gallery">
+                        <a class="gallery-item__img" href="img/photogallery/1.jpg">
+                            <img src="img/photogallery/1.jpg" alt="">
+                        </a>
+                        <a style="display: none;" href="img/photogallery/2.jpg">
+                            <img class="photo-gallery__item-img" src="img/photogallery/1.jpg" alt="Новые полувагоны">
+                        </a>
+                        <a style="display: none;" href="img/photogallery/3.jpg">
+                            <img class="photo-gallery__item-img" src="img/photogallery/3.jpg" alt="Новые полувагоны">
+                        </a>
+                        <h5 class="gallery-item__title">Новые полувагоны</h5>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

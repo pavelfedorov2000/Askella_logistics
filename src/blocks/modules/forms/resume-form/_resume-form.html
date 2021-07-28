@@ -1,0 +1,26 @@
+<form id="resume-form" action="#" class="form resume-form work-in-company__form">
+    <legend class="form__title">
+        ЗАЯВКА НА ПЕРЕВОЗКУ И АРЕНДУ ВАГОНОВ
+    </legend>
+    <div class="form__body">
+        <input class="form__input" name="name" placeholder="ФИО" required>
+        <input class="form__input" type="tel" name="phone" placeholder="E-mail" required>
+        <input class="form__input" type="email" name="email" placeholder="Телефон" required>
+        <select class="filter-style" name="vacancies" id="vacancies">
+            <option value="vacancy-1">Вакансии</option>
+            <option value="vacancy-2">1</option>
+            <option value="vacancy-3">2</option>
+        </select>
+
+        <div class="form__file resume-form__file">
+            <label class="form__label form__file-label" for="file">
+                Прикрепить резюме
+            </label>
+            <input class="filter-style" type="file" name="resume" id="resume" data-placeholder="Выберите файл">
+        </div>
+
+        @@include('../_antispam.html')
+
+        <button class="btn form__btn" type="submit"><span>Отправить</span></button>
+    </div>
+</form>

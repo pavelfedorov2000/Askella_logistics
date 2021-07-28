@@ -1,0 +1,21 @@
+.resume-form {
+    &__file {
+        margin: 24px 0 18px;
+    }
+
+    .jq-selectbox {
+        width: 100%;
+
+        &__select {
+            transform: skewX(-25deg);
+            height: 44px;
+            color: $dark;
+            padding-left: 40px;
+        }
+
+        &__trigger {
+            width: 74px;
+            background-color: $dark-blue;
+        }
+    }
+}

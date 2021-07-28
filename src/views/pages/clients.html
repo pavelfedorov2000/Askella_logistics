@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Клиентам"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/menu/_menu.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <div class="breadcrumbs-wrap container">
+            <nav class="breadcrumbs" aria-label="breadcrumbs">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="home.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span>
+                            Клиентам
+                        </span>
+                    </li>
+                </ol>
+            </nav>
+            <a href="#" class="print-version">Версия для печати</a>
+        </div>
+
+        <main class="page clients">
+            <div class="container">
+                <h1>КЛИЕНТАМ ООО «ГРУЗОВАЯ КОМПАНИЯ»</h1>
+                <p>
+                    В данном разделе вы можете получить всю необходимую информацию о деятельности ООО «Грузовая
+                    компания», предоставляемых услугах и возможностях сотрудничества.
+                </p>
+                <div class="cards">
+                    <a href="#" class="card clients__card">
+                        <div class="card__img">
+                            <img src="img/clients/1.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <h5 class="line-title card__title">НОВЫМ КЛИЕНТАМ</h5>
+                            <div class="card__text">
+                                Информация для потенциальных клиентов,перечень предоставляемых услуг.
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card clients__card">
+                        <div class="card__img">
+                            <img src="img/clients/2.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <h5 class="line-title card__title">УСЛУГИ</h5>
+                            <div class="card__text">
+                                Основные виды услуг, предоставляемые
+                                ООО «Грузовая компания».
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card clients__card">
+                        <div class="card__img">
+                            <img src="img/clients/3.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <h5 class="line-title card__title">ЗАЯВКА НА ПЕРЕВОЗКУ/АРЕНДУ ВАГОНОВ</h5>
+                            <div class="card__text">
+                                Формы заявок на перевозку экспортируемых грузови перевозку во внутрироссийском
+                                сообщении.
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card clients__card">
+                        <div class="card__img">
+                            <img src="img/clients/4.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <h5 class="line-title card__title">НАШИ КЛИЕНТЫ</h5>
+                            <div class="card__text">
+                                Ключевые клиенты компании
+                                ООО «Грузовая компания».
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

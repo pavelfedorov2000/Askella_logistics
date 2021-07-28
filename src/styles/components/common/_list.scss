@@ -1,0 +1,31 @@
+.list {
+
+    // .list__item
+
+    &__item {
+        position: relative;
+        padding-left: 27px;
+        @extend %text-16;
+        margin-bottom: 14px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 13px;
+            height: 10px;
+            background-color: $blue;
+            clip-path: polygon(23% 0%, 100% 0%, 77% 100%, 0% 100%);
+        }
+
+        &:nth-child(3),
+        &:nth-child(5) {
+            margin-bottom: 18px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

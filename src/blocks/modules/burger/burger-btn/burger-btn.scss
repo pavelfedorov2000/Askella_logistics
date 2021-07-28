@@ -1,0 +1,12 @@
+.burger-btn {
+    display: none;
+
+    @media (max-width: 991px) {
+        display: block;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+}

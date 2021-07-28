@@ -1,0 +1,39 @@
+<header class="header">
+    <div class="lines header__lines">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="container header__container">
+        <div class="header__inner">
+            <div class="logo header__logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="img/logo/logo.svg" alt="логотип Askella Logistics">
+                </a>
+            </div>
+            <form class="header__search search-form" action="#">
+                <div class="search-form__inner">
+                    <div class="search-form__img">
+                        <svg class="search-form__icon">
+                            <use xlink:href="img/sprite.svg#map"></use>
+                        </svg>
+                    </div>
+                    <input class="search-form__input" placeholder="Поиск по сайту">
+                    <button class="search-form__btn" aria-label="search" type="submit"></button>
+                </div>
+            </form>
+            <div class="header__call">
+                <a href="tel:+74996827201" class="header__call-phone">
+                    +7 [499] <span>682 72 01</span>
+                </a>
+                <a href="#" class="header__call-link">Обратная связь</a>
+            </div>
+            <div class="header__langs">
+                <div class="header__lang header__lang--active">Ru</div>
+                <div class="header__lang">Eng</div>
+            </div>
+            <button class="header__search-btn" aria-label="search" type="button"></button>
+            @@include('../burger/burger-btn/_burger-btn.html')
+        </div>
+    </div>
+</header>

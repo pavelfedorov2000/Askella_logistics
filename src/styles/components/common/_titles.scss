@@ -1,0 +1,40 @@
+.title {
+    font-weight: bold;
+}
+
+.middle-title {
+    @extend .title;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.line-title {
+    position: relative;
+    @extend .title;
+    padding-right: 30px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #38505A;
+    }
+}
+
+.section-title {
+    @extend .middle-title;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+
+    @media(max-width: 374px) {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Главная"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/menu/_menu.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page">
+            @@include('../../blocks/modules/promo/_promo.html')
+
+            @@include('../../blocks/modules/services/_services.html')
+
+            <div class="articles">
+                <div class="container">
+                    <div class="articles__row">
+                        <article class="articles__col article">
+                            <h3 class="section-title line-title article__title">
+                                <a href="#">Новости компании</a>
+                            </h3>
+                            <article class="article__item">
+                                <time class="article__item-date" datetime="2021-03-30">30/03/2021</time>
+                                <h6 class="article__item-title">
+                                    <a href="#">
+                                        ВТБ Лизинг передал в оперирование "Грузовой компании" более 2000 полувагонов
+                                    </a>
+                                </h6>
+                            </article>
+                            <article class="article__item">
+                                <time class="article__item-date" datetime="2021-03-16">16/03/2021</time>
+                                <h6 class="article__item-title">
+                                    <a href="#">Выставка TRANSRUSSIA 2021</a>
+                                </h6>
+                            </article>
+                            <article class="article__item">
+                                <time class="article__item-date" datetime="2021-03-27">27/03/2021</time>
+                                <h6 class="article__item-title">
+                                    <a href="#">О БЕСПЕРЕБОЙНОЙ РАБОТЕ ООО «ГРУЗОВАЯ КОМПАНИЯ»</a>
+                                </h6>
+                            </article>
+                            <a href="#" class="btn articles__btn">
+                                <span>Все новости</span>
+                            </a>
+                        </article>
+                        <article class="articles__col article">
+                            <h3 class="section-title line-title article__title">
+                                <a href="#">Новости отрасли</a>
+                            </h3>
+                            <article class="article__item">
+                                <time class="article__item-date" datetime="2021-03-30">30/03/2021</time>
+                                <h6 class="article__item-title">
+                                    <a href="#">Вагоны уезжают от ремонтов</a>
+                                </h6>
+                            </article>
+                            <article class="article__item">
+                                <time class="article__item-date" datetime="2021-03-30">30/03/2021</time>
+                                <h6 class="article__item-title">
+                                    <a href="#">РЖД наращивает поставки угля в 2021 году</a>
+                                </h6>
+                            </article>
+                            <article class="article__item">
+                                <time class="article__item-date" datetime="2021-03-30">30/03/2021</time>
+                                <h6 class="article__item-title">
+                                    <a href="#">Замерзшая Балтика подняла цены на уголь в Европе</a>
+                                </h6>
+                            </article>
+                            <a href="#" class="btn articles__btn">
+                                <span>Все новости</span>
+                            </a>
+                        </article>
+                        <article class="articles__col article important-info">
+                            <h3 class="section-title line-title article__title">
+                                <a href="#">Важная информация</a>
+                            </h3>
+                            <a href="#" class="important-info__item">
+                                <img class="important-info__item-img" src="img/icons/important-info/1.png" alt="">
+                                Подвижной состав
+                            </a>
+                            <a href="#" class="important-info__item">
+                                <img class="important-info__item-img" src="img/icons/important-info/2.png" alt="">
+                                Заявка на перевозку
+                            </a>
+                            <a href="#" class="important-info__item">
+                                <img class="important-info__item-img" src="img/icons/important-info/3.png" alt="">
+                                Новым клиентам
+                            </a>
+                            <a href="#" class="important-info__item">
+                                <img class="important-info__item-img" src="img/icons/important-info/4.png" alt="">
+                                Мнение экспертов
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

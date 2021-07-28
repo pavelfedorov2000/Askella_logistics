@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Контакты"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        @@include('../../blocks/modules/menu/_menu.html')
+
+        @@include('../../blocks/modules/breadcrumbs/_1-level.html', {
+        "current": "Контакты"
+        })
+
+        <main class="page contacts">
+            <div class="container">
+                <h1>Контакты</h1>
+                <p>
+                    Если у вас есть предложения или вопросы, вы можете связаться с нами любым из предложенных способов,
+                    мы
+                    будем рады сотрудничеству и ответим на все интересующие вас вопросы.
+                </p>
+
+                <address class="contact-info">
+                    <div class="contact-info__item contact-info__address">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#pin"></use>
+                        </svg>
+                        107140, г. Москва, улица Верхняя Красносельская, дом 16
+                    </div>
+                    <a href="tel:+74996827201" class="contact-info__item contact-info__link">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#mobile-phone"></use>
+                        </svg>
+                        +7 (499) 682-72-01
+                    </a>
+                    <a href="tel:+74996827223" class="contact-info__item contact-info__link">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg>
+                        +7 (499) 682-72-23
+                    </a>
+                    <a href="mailto:info@gruzovaya.com" class="contact-info__item contact-info__link">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#mail"></use>
+                        </svg>
+                        info@gruzovaya.com
+                    </a>
+                </address>
+
+                <iframe id="map"
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab2ff3522b1f7c20307df350e5885400fb3829a6e1e66e9803c3e6986a3e2ccfd&amp;source=constructor"
+                    height="370" frameborder="0"></iframe>
+
+                <div class="cards">
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <img src="img/contacts/1.png" alt="адрес">
+                        </div>
+                        <span class="card__content">
+                            <h5 class="card__title">НАШ АДРЕС</h5>
+                            <span class="card__text">
+                                Контактные данные компании<br>
+                                ООО «Грузовая компания».
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <img src="img/contacts/2.png" alt="обратная связь">
+                        </div>
+                        <span class="card__content">
+                            <h5 class="card__title">ОБРАТНАЯ СВЯЗЬ</h5>
+                            <span class="card__text">Онлайн-форма обратной связи.</span>
+                        </span>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <img src="img/contacts/3.png" alt="реквизиты">
+                        </div>
+                        <span class="card__content">
+                            <h5 class="card__title">РЕКВИЗИТЫ</h5>
+                            <span class="card__text">
+                                Формы заявок на перевозку экспортируемых грузови перевозку во внутрироссийском
+                                сообщении.
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <img src="img/contacts/4.png" alt="опрос клиентов">
+                        </div>
+                        <span class="card__content">
+                            <h5 class="card__title">ОПРОС КЛИЕНТОВ</h5>
+                            <span class="card__text">
+                                Вопросы для оценки качества предоставляемых услуг.
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

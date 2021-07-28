@@ -1,0 +1,75 @@
+// =============== INPUT-FILE ================ //
+.jq-file {
+    position: relative;
+    width: auto;
+    box-shadow: none;
+    border-radius: 0;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    transform: skewX(-30deg);
+
+    &__name {
+        transform: skewX(30deg);
+        border-radius: 0;
+        padding: 0 20px;
+        height: 29px;
+        @extend %flex-center;
+        border: none;
+        box-shadow: none;
+        font: 14px/16px Arial, sans-serif;
+        text-transform: uppercase;
+    }
+
+    &__browse {
+        display: none;
+        font: 18px/18px Montserrat, sans-serif;
+    }
+
+    &:focus {
+        outline: none;
+
+        .jq-file {
+            &__name {
+                outline: none;
+                border: none;
+            }
+        }
+    }
+
+    &.focused,
+    &.changed {
+        .jq-file__name {
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+.request-form {
+    .jq-file {
+        border-color: $orange;
+
+        &__name {
+            color: $orange;
+
+            /* &:hover {
+                background-color: $orange;
+            } */
+        }
+    }
+}
+
+.resume-form {
+    .jq-file {
+        border-color: $dark-blue;
+
+        &__name {
+            color: $dark-blue;
+
+            /* &:hover {
+                background-color: $dark-blue;
+            } */
+        }
+    }
+}

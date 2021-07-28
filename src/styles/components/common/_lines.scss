@@ -1,0 +1,26 @@
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    transform: skewX(-30deg);
+
+    span {
+        display: inline-block;
+        width: 33.3333%;
+        height: 100%;
+
+        &:nth-child(1) {
+            background-color: $orange;
+        }
+
+        &:nth-child(2) {
+            background-color: $blue;
+        }
+
+        &:nth-child(3) {
+            background-color: $dark-blue;
+        }
+    }
+}

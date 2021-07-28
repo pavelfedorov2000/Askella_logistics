@@ -1,0 +1,30 @@
+// ===================== CHECKBOXES, RADIO ==================== //
+.jq-radio {
+    @extend %flex-center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #959CA1;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: none;
+    vertical-align: 0px;
+    margin: 0 0 7px 0;
+}
+
+.jq-radio.checked {
+    background: transparent;
+    border: 1px solid #959CA1;
+}
+
+.jq-radio.checked .jq-radio {
+    &__div {
+        width: 9px;
+        height: 9px;
+        background-color: $second-blue;
+        margin: 0;
+        border-bottom: none;
+        border-left: none;
+        transform: rotate(0deg);
+        box-shadow: none;
+    }
+}

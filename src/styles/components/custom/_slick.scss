@@ -1,0 +1,33 @@
+.slick {
+    &-dots {
+        position: absolute;
+        @extend %pos-center-x;
+        bottom: -27px;
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $dark-blue;
+            padding: 0;
+            font-size: 0;
+        }
+
+        .slick-active button {
+            background: $second-blue;
+        }
+    }
+}
+
+.slick-disabled {
+    margin-right: 11px;
+
+    svg path {
+        fill: #E9EFEF;
+    }
+}

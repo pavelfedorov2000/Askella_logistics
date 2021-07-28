@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Фотогалерея"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/menu/_menu.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        @@include('../../blocks/modules/breadcrumbs/_2-level.html', {
+        "prev": "Пресс-центр",
+        "current": "Фотогалерея"
+        })
+
+        <main class="page photo-gallery">
+            <div class="container">
+                <h1>ФОТОГАЛЕРЕЯ ООО «ГРУЗОВАЯ КОМПАНИЯ»</h1>
+                <div class="photo-gallery__items">
+                    <div class=" photo-gallery__item gallery-item popup-gallery">
+                        <a class="gallery-item__img" href="img/photogallery/1.jpg">
+                            <img src="img/photogallery/1.jpg" alt="Новые полувагоны">
+                        </a>
+                        <h5 class="middle-title gallery-item__title">Новые полувагоны</h5>
+                    </div>
+                    <div class="photo-gallery__item gallery-item popup-gallery">
+                        <a class="gallery-item__img" href="img/photogallery/2.jpg">
+                            <img src="img/photogallery/2.jpg" alt="Новые полувагоны">
+                        </a>
+                        <h5 class="middle-title gallery-item__title">ТрансРоссия 2018</h5>
+                    </div>
+                    <div class="photo-gallery__item gallery-item popup-gallery">
+                        <a class="gallery-item__img" href="img/photogallery/3.jpg">
+                            <img src="img/photogallery/3.jpg" alt="Новые полувагоны">
+                        </a>
+                        <h5 class="middle-title gallery-item__title">Вагонный парк</h5>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

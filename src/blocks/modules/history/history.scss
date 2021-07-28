@@ -1,0 +1,202 @@
+.p-history {
+
+    // .p-history__top
+
+    &__top {
+        @extend %flex-row-center;
+        margin-bottom: 24px;
+    }
+}
+
+.history-slider {}
+
+.history-tape {
+
+    .slick-list,
+    .slick-track {
+        //overflow: visible;
+    }
+
+    // .history-tap__item
+
+    &__item {
+        position: relative;
+        width: 283px;
+        height: 159px;
+        flex-shrink: 0;
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url(../img/history-tape-train.svg);
+        background-size: cover;
+
+        @media(max-width: 575px) {
+            width: 158px;
+            height: 89px;
+
+            margin: 0 -7px;
+        }
+
+        &--active {
+            background-image: url(../img/history-tape-train-active.svg);
+        }
+    }
+
+    // .history-tape__item-year
+
+    &__item-year {
+        //position: absolute;
+        //top: 31%;
+        //right: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-shrink: 0;
+        color: #fff;
+        @extend %text-18;
+        font-weight: 700;
+        padding-right: 21px;
+        padding-bottom: 5px;
+        width: 109px;
+        height: 45px;
+        background-color: $blue;
+        clip-path: polygon(23% 0%, 100% 0%, 79% 100%, 0% 100%);
+        margin-top: -14px;
+        margin-right: 20px;
+
+        @media(max-width: 575px) {
+            width: 66px;
+            height: 27px;
+            font-size: 14px;
+            line-height: 16px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 5px 15px;
+            margin-top: -8px;
+        }
+    }
+}
+
+.history {
+    &__content {
+        display: none;
+        margin-top: 40px;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__item {
+        &--active {}
+    }
+
+    &__year {
+        position: relative;
+        padding-left: 62px;
+        @extend %text-20;
+        font-weight: 700;
+
+        @media(max-width: 575px) {
+            font-size: 18px;
+            line-height: 21px;
+            padding-left: 30px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            @extend %pos-center-y;
+            left: 0px;
+            width: 40px;
+            height: 40px;
+            background-image: url(../img/icons/calendar.svg);
+            background-repeat: no-repeat;
+
+            @media(max-width: 575px) {
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+            }
+        }
+    }
+
+    &__events {
+        position: relative;
+        border-left: 1px solid #959CA1;
+        padding: 50px 0 40px 85px;
+        margin-left: 19px;
+        margin-top: 5px;
+
+        @media(max-width: 575px) {
+            padding: 35px 0 30px 15px;
+            margin-left: 10px;
+            margin-top: -3px;
+        }
+
+        &:before {
+            @include before-event(20px, -11px);
+            top: 100.5%;
+
+            @media(max-width: 575px) {
+                width: 14px;
+                height: 14px;
+                left: -8px;
+            }
+        }
+    }
+
+    &__event {
+        position: relative;
+        width: 1120px;
+        padding: 20px 0 28px 103px;
+        //color: $dark-blue;
+
+        @media(max-width: 1300px) {
+            width: 100%;
+        }
+
+        @media(max-width: 767px) {
+            padding: 18px 17px 24px 30px;
+        }
+
+
+        &:before {
+            @include before-event(15px, -93px);
+            top: 34px;
+            background-color: #fff;
+
+            @media(max-width: 575px) {
+                width: 8px;
+                height: 8px;
+            }
+        }
+
+        time {
+            display: block;
+            @extend %text-20;
+            font-weight: 700;
+            margin-bottom: 18px;
+
+            @media(max-width: 575px) {
+                font-size: 18px;
+                line-height: 21px;
+                margin-bottom: 12px;
+            }
+        }
+
+        p {
+            @extend %text-14;
+        }
+    }
+
+    &__event+&__event {
+        margin-top: 30px;
+
+        @media(max-width: 575px) {
+            margin-top: 18px;
+        }
+    }
+
+}
