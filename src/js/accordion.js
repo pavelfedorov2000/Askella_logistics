@@ -1,5 +1,6 @@
 if (window.innerWidth < 991) {
-    $('.menu__item-drop').on('click', function () {
+    $('.menu__item-drop').on('click', function (e) {
+        e.preventDefault();
         $(this).parent().parent().siblings().removeClass('menu__item--active');
         $(this).parent().parent().siblings().find('ul.menu__sublist').slideUp('300');
         $(this).parent().parent().toggleClass('menu__item--active');
